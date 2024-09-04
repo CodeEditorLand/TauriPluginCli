@@ -32,7 +32,7 @@ var core = require("@tauri-apps/api/core");
  * @since 2.0.0
  */
 async function getMatches() {
-	return await core.invoke("plugin:cli|cli_matches");
+    return await core.invoke('plugin:cli|cli_matches');
 }
 
 exports.getMatches = getMatches;
