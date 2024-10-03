@@ -18,5 +18,3 @@ impl Serialize for Error {
         serializer.serialize_str(self.to_string().as_ref())
     }
 }
-
-pub type Result<T> = std::result::Result<T, Error>;

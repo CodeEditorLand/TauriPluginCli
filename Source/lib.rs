@@ -23,9 +23,8 @@ mod error;
 mod parser;
 
 use config::{Arg, Config};
-
-pub use error::{Error, Result};
-pub use parser::{ArgData, Matches, SubcommandMatches};
+pub use error::Error;
+type Result<T> = std::result::Result<T, Error>;
 
 pub struct Cli<R: Runtime>(PluginApi<R, Config>);
 
