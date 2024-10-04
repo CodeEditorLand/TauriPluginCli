@@ -1,4 +1,4 @@
-import { invoke } from '@tauri-apps/api/core';
+import { invoke } from "@tauri-apps/api/core";
 
 // Copyright 2019-2023 Tauri Programme within The Commons Conservancy
 // SPDX-License-Identifier: Apache-2.0
@@ -30,7 +30,7 @@ import { invoke } from '@tauri-apps/api/core';
  * @since 2.0.0
  */
 async function getMatches() {
-    return await invoke('plugin:cli|cli_matches');
+	return await invoke("plugin:cli|cli_matches");
 }
 
 export { getMatches };
