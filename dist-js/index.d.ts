@@ -2,30 +2,30 @@
  * @since 2.0.0
  */
 interface ArgMatch {
-	/**
-	 * string if takes value
-	 * boolean if flag
-	 * string[] or null if takes multiple values
-	 */
-	value: string | boolean | string[] | null;
-	/**
-	 * Number of occurrences
-	 */
-	occurrences: number;
+    /**
+     * string if takes value
+     * boolean if flag
+     * string[] or null if takes multiple values
+     */
+    value: string | boolean | string[] | null;
+    /**
+     * Number of occurrences
+     */
+    occurrences: number;
 }
 /**
  * @since 2.0.0
  */
 interface SubcommandMatch {
-	name: string;
-	matches: CliMatches;
+    name: string;
+    matches: CliMatches;
 }
 /**
  * @since 2.0.0
  */
 interface CliMatches {
-	args: Record<string, ArgMatch>;
-	subcommand: SubcommandMatch | null;
+    args: Record<string, ArgMatch>;
+    subcommand: SubcommandMatch | null;
 }
 /**
  * Parse the arguments provided to the current process and get the matches using the configuration defined [`tauri.cli`](https://tauri.app/v1/api/config/#tauriconfig.cli) in `tauri.conf.json`
