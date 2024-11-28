@@ -49,5 +49,7 @@ interface CliMatches {
  * @since 2.0.0
  */
 declare function getMatches(): Promise<CliMatches>;
+
 export type { ArgMatch, SubcommandMatch, CliMatches };
+
 export { getMatches };
