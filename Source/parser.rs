@@ -5,12 +5,12 @@
 use std::collections::HashMap;
 
 use clap::{
-	builder::{PossibleValue, PossibleValuesParser},
-	error::ErrorKind,
 	Arg as ClapArg,
 	ArgAction,
 	ArgMatches,
 	Command,
+	builder::{PossibleValue, PossibleValuesParser},
+	error::ErrorKind,
 };
 use serde::Serialize;
 use serde_json::Value;
